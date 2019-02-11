@@ -1,0 +1,14 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: en_US\n"
+
+#: src/app/components/InternationalizeTest/index.js:21
+msgid "Fake Internationalized string."
+msgstr ""
+
+#: src/app/components/InternationalizeTest/index.js:18
+msgid "There is %s person"
+msgid_plural "There are %s people."
+msgstr[0] ""
+msgstr[1] ""
