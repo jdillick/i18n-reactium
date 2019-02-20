@@ -1,5 +1,7 @@
-import React, { Component, Fragment } from 'react';
-import { __, _n } from 'components/i18n';
+import React, { Component } from 'react';
+import { I18nProvider, Translate } from 'components/i18n';
+import SomeTranslatedComponent from './SomeTranslatedComponent';
+import { Link } from 'react-router-dom';
 
 /**
  * -----------------------------------------------------------------------------
@@ -9,22 +11,13 @@ import { __, _n } from 'components/i18n';
 // const __ = message => message; // fake gettext
 
 export default class InternationalizeTest extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
     render() {
-        const { people } = this.props;
-        const peopleString = _n('There is %s person', 'There are %s people.', people);
         return (
-            <Fragment>
-                {__('Fake Internationalized string.')}
-                {peopleString.replace('%s', people)}
-            </Fragment>
+            <I18nProvider>
+                <Translate>
+                    <SomeTranslatedComponent />
+                </Translate>
+            </I18nProvider>
         );
     }
 }
-
-InternationalizeTest.defaultProps = {
-    people: 3
-};

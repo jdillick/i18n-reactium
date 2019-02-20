@@ -2,7 +2,7 @@ import InternationalizeTest from './index';
 import deps from 'dependencies';
 
 export default {
-    path: ["/"],
+    path: ['/', '/:locale'],
     exact: true,
     component: InternationalizeTest,
 };

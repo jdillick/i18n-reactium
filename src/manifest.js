@@ -7,6 +7,7 @@ module.exports = {
     get: () => {
         return {
             allActions: {
+                i18n: require('components/i18n/actions').default,
                 Plugable: require('reactium-core/components/Plugable/actions')
                     .default,
                 Router: require('reactium-core/components/Router/actions')
@@ -15,6 +16,7 @@ module.exports = {
                     .default,
             },
             allActionTypes: {
+                i18n: require('components/i18n/actionTypes').default,
                 Plugable: require('reactium-core/components/Plugable/actionTypes')
                     .default,
                 Router: require('reactium-core/components/Router/actionTypes')
@@ -23,6 +25,7 @@ module.exports = {
                     .default,
             },
             allReducers: {
+                i18n: require('components/i18n/reducers').default,
                 Plugable: require('reactium-core/components/Plugable/reducers')
                     .default,
                 Router: require('reactium-core/components/Router/reducers')
@@ -93,6 +96,7 @@ module.exports = {
             allActions: {
                 type: 'actions',
                 imports: [
+                    'components/i18n/actions',
                     'reactium-core/components/Plugable/actions',
                     'reactium-core/components/Router/actions',
                     'reactium-core/components/Toolkit/actions',
@@ -101,6 +105,7 @@ module.exports = {
             allActionTypes: {
                 type: 'actionTypes',
                 imports: [
+                    'components/i18n/actionTypes',
                     'reactium-core/components/Plugable/actionTypes',
                     'reactium-core/components/Router/actionTypes',
                     'reactium-core/components/Toolkit/actionTypes',
@@ -109,6 +114,7 @@ module.exports = {
             allReducers: {
                 type: 'reducers',
                 imports: [
+                    'components/i18n/reducers',
                     'reactium-core/components/Plugable/reducers',
                     'reactium-core/components/Router/reducers',
                     'reactium-core/components/Toolkit/reducers',

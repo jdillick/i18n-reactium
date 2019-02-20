@@ -3,11 +3,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language: en_US\n"
 
+#: src/app/components/InternationalizeTest/InternationalizeTest.js:23
+msgid "Another string for translation."
+msgstr ""
+
 #: src/app/components/InternationalizeTest/index.js:21
+#: src/app/components/InternationalizeTest/InternationalizeTest.js:24
 msgid "Fake Internationalized string."
 msgstr ""
 
 #: src/app/components/InternationalizeTest/index.js:18
+#: src/app/components/InternationalizeTest/InternationalizeTest.js:19
 msgid "There is %s person"
 msgid_plural "There are %s people."
 msgstr[0] ""
