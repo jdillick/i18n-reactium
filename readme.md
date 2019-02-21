@@ -35,6 +35,14 @@ numMessages = _n('You have a message.', 'You have messages.', 2); // You have me
 
 Using the node cli tool `gettext-extract`, strings found in the codebase as above will be extracted into a `src/translations/template.pot` template file. Using this file, specific language translations can be prepared using a standard translation tool, such as [Poedit](https://poedit.net/). Those translations can be added to the `src/translations` directory (e.g. `es_MX.po` for Mexican Spanish), without editing any code. Nice separation of concerns for translation.
 
+Install `gettext-extract`:
+
+```sh
+npm install -g gettext-extract
+```
+
+Configure `gettext-extract` using `.gettext.json` file.
+
 ## How it works
 
 Translations are provided into the javascript environment using a webpack loader. See `loaders/po-loader` and how this is added to webpack configuration in `webpack.override.js`.
@@ -90,7 +98,7 @@ export default class HelloWorld extends Component {
     }
 }
 HelloWorld.defaultProps = {
-    nnumMessages: 5,
+    numMessages: 5,
     ...i18nDefaultProps,
 };
 ```
