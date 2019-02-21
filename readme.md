@@ -14,7 +14,7 @@ npm run local
 Gettext is a good 'ole way of translating software, and utilizes some simple functions for identifying strings that can be translated.
 
 In this repo, we are providing two helper functions `__(<string>)` and `_n(<singular>, <plural>, <number>)`, for providing an ordinary string for translation, as well as
-to handle a phrase that will very by some number context for a singular and plural form.
+to handle a phrase that will vary by some number context for a singular and plural form.
 
 E.g.
 
