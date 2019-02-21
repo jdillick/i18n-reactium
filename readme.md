@@ -5,8 +5,8 @@ This repo is a POC for a translation provider / consumer for React, using string
 To see the demo locally:
 
 ```sh
-npm install
-npm run local
+$ npm install
+$ npm run local
 ```
 
 ## Gettext
@@ -35,13 +35,21 @@ numMessages = _n('You have a message.', 'You have messages.', 2); // You have me
 
 Using the node cli tool `gettext-extract`, strings found in the codebase as above will be extracted into a `src/translations/template.pot` template file. Using this file, specific language translations can be prepared using a standard translation tool, such as [Poedit](https://poedit.net/). Those translations can be added to the `src/translations` directory (e.g. `es_MX.po` for Mexican Spanish), without editing any code. Nice separation of concerns for translation.
 
-Install `gettext-extract`:
+#### Using gettext-extract
 
 ```sh
 npm install -g gettext-extract
 ```
 
 Configure `gettext-extract` using `.gettext.json` file.
+
+Now, to generate a `template.pot` translation template, simply run the `gettext-extract` command from your project directory.
+
+Easy:
+
+```sh
+$ gettext-extract
+```
 
 ## How it works
 
